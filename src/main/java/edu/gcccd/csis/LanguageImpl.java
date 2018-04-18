@@ -27,7 +27,7 @@ public class LanguageImpl implements Language{
         try {
             String s;
             Path path = Paths.get(sourcefile);
-            Pattern wordsOnly = Pattern.compile("\\S*\\S");
+            Pattern wordsOnly = Pattern.compile("\\s*\\s");
             Scanner input = new Scanner(path).useDelimiter(wordsOnly);
             while (input.hasNext()) {
                 s = input.next();
