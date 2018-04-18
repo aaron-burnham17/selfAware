@@ -3,6 +3,7 @@ package edu.gcccd.csis;
 import java.io.IOException;
 import java.util.Arrays;
 import java.util.Comparator;
+import java.util.HashMap;
 
 public interface Language {
     // Java reserved words are keywords that are reserved by Java functions or other uses that cannot be used
@@ -27,7 +28,7 @@ public interface Language {
             "final",
             "finally",
             "float",
-            "for",      
+            "for",
             "goto",
             "if",
             "implements",
@@ -78,7 +79,7 @@ public interface Language {
      * @return {@link int} number of times java keyword occur in the source file.
      * @throws Exception not a java file or no file maybe ...
      */
-    int occurrences(String sourceFile) throws Exception;
+     void occurrences(String sourceFile) throws Exception;
 
     /**
      * Appends the provided file with the provided message
@@ -87,5 +88,5 @@ public interface Language {
      * @param message    {@link String} message to be appended
      * @throws IOException things didn't go too well ...
      */
-    void append(String sourceFile, String message) throws IOException;
+    void append(String sourceFile) throws IOException;
 }
