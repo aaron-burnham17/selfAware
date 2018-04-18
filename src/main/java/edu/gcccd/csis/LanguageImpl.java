@@ -51,7 +51,7 @@ public class LanguageImpl implements Language{
             Path path = Paths.get(sourcefile);
             Formatter toFile = new Formatter(sourcefile);
             for(String s: occurencesTracker.keySet()){
-                toFile.format("//"s + " Occurences: "  + occurencesTracker.get(s) + "\n");
+                toFile.format("//" + s + " Occurences: "  + occurencesTracker.get(s) + "\n");
             }
             toFile.format("//Total Occurences: " + totalCount);
             toFile.close();
