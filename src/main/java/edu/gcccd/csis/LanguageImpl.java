@@ -14,7 +14,7 @@ import java.util.regex.Pattern;
 
 public class LanguageImpl implements Language{
     private int totalCount;
-    private HashMap<String,Integer> occurencesTracker;
+    private HashMap<String,Integer> occurencesTracker = new HashMap<String, Integer>(ReservedWords.length);
     public LanguageImpl(){
         totalCount = 0;
         for(String s: ReservedWords){
@@ -51,9 +51,9 @@ public class LanguageImpl implements Language{
             Path path = Paths.get(sourcefile);
             Formatter toFile = new Formatter(sourcefile);
             for(String s: occurencesTracker.keySet()){
-                toFile.format(s + " Occurences: "  + occurencesTracker.get(s) + "\n");
+                toFile.format("//"s + " Occurences: "  + occurencesTracker.get(s) + "\n");
             }
-            toFile.format("Total Occurences: " + totalCount);
+            toFile.format("//Total Occurences: " + totalCount);
             toFile.close();
         }
         catch(IOException IOException){
