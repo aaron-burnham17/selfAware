@@ -23,12 +23,16 @@ public class LanguageImpl implements Language{
         }
     }
 
+    public HashMap<String, Integer> getHash(){ //Need for testclass
+        return this.occurencesTracker;
+    }
+
     @Override
     public void occurrences(String sourcefile) {
         try {
             String s;
             Path path = Paths.get(sourcefile);
-            Pattern wordsOnly = Pattern.compile("\\s*\\s");
+            Pattern wordsOnly = Pattern.compile("(\\b|\\s)*(\\b|\\s)");
             Scanner input = new Scanner(path).useDelimiter(wordsOnly);
             while (input.hasNext()) {
                 s = input.next();
@@ -80,7 +84,7 @@ public class LanguageImpl implements Language{
 //protected Occurences: 0
 //else Occurences: 0
 //continue Occurences: 0
-//catch Occurences: 0
+//catch Occurences: 3
 //if Occurences: 1
 //case Occurences: 0
 //new Occurences: 4
@@ -98,13 +102,13 @@ public class LanguageImpl implements Language{
 //null Occurences: 0
 //transient Occurences: 0
 //final Occurences: 1
-//true Occurences: 0
-//try Occurences: 1
+//true Occurences: 1
+//try Occurences: 2
 //implements Occurences: 1
 //private Occurences: 2
 //const Occurences: 0
 //import Occurences: 12
-//for Occurences: 0
+//for Occurences: 2
 //interface Occurences: 0
 //long Occurences: 0
 //switch Occurences: 0
@@ -113,7 +117,7 @@ public class LanguageImpl implements Language{
 //public Occurences: 5
 //native Occurences: 0
 //assert Occurences: 0
-//class Occurences: 1
+//class Occurences: 2
 //break Occurences: 0
 //false Occurences: 0
 //volatile Occurences: 0
@@ -126,4 +130,4 @@ public class LanguageImpl implements Language{
 //char Occurences: 0
 //short Occurences: 0
 //return Occurences: 0
-//Total Occurences: 35
+//Total Occurences: 43

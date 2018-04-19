@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="48b89b2c-5aaf-425d-bbbe-d756d238749c" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/src/main/java/edu/gcccd/csis/LanguageImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/gcccd/csis/LanguageImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/edu/gcccd/csis/LanguageTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/edu/gcccd/csis/LanguageTest.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/.gradle/" />
@@ -24,7 +25,7 @@
       <file leaf-file-name="Language.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/edu/gcccd/csis/Language.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="510">
+            <state relative-caret-position="770">
               <caret line="90" column="33" selection-start-line="90" selection-start-column="33" selection-end-line="90" selection-end-column="33" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -38,11 +39,13 @@
       <file leaf-file-name="LanguageImpl.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/edu/gcccd/csis/LanguageImpl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="409">
-              <caret line="49" column="10" selection-start-line="49" selection-start-column="10" selection-end-line="49" selection-end-column="10" />
+            <state relative-caret-position="442">
+              <caret line="62" column="9" lean-forward="true" selection-start-line="62" selection-start-column="9" selection-end-line="62" selection-end-column="9" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#497#514#0" expanded="true" />
+                <element signature="e#760#761#0" expanded="true" />
+                <element signature="e#788#789#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -51,8 +54,8 @@
       <file leaf-file-name="LanguageTest.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/edu/gcccd/csis/LanguageTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="391">
-              <caret line="23" selection-start-line="23" selection-end-line="23" />
+            <state relative-caret-position="493">
+              <caret line="74" column="5" lean-forward="true" selection-start-line="74" selection-start-column="5" selection-end-line="74" selection-end-column="5" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -68,6 +71,28 @@
         <option value="Class" />
       </list>
     </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>while</find>
+      <find>catch</find>
+      <find>if</find>
+      <find>new</find>
+      <find>package</find>
+      <find>static</find>
+      <find>void</find>
+      <find>final</find>
+      <find>true</find>
+      <find>try</find>
+      <find>implements</find>
+      <find>private</find>
+      <find>import</find>
+      <find>for</find>
+      <find>public</find>
+      <find>class</find>
+      <find>int</find>
+      <find>String</find>
+    </findStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -365,8 +390,8 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/src/main/java/edu/gcccd/csis/Language.java" />
-        <option value="$PROJECT_DIR$/src/test/java/edu/gcccd/csis/LanguageTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/edu/gcccd/csis/LanguageImpl.java" />
+        <option value="$PROJECT_DIR$/src/test/java/edu/gcccd/csis/LanguageTest.java" />
       </list>
     </option>
   </component>
@@ -457,7 +482,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="JUnit.LanguageTest.occurrences">
     <configuration default="true" type="Applet" factoryName="Applet">
       <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
     </configuration>
@@ -474,6 +499,29 @@
     </configuration>
     <configuration default="true" type="Application" factoryName="Application">
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+    </configuration>
+    <configuration name="LanguageTest.occurrences" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="selfAware" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="edu.gcccd.csis.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="edu.gcccd.csis" />
+      <option name="MAIN_CLASS_NAME" value="edu.gcccd.csis.LanguageTest" />
+      <option name="METHOD_NAME" value="occurrences" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <patterns />
     </configuration>
     <configuration default="true" type="JUnit" factoryName="JUnit">
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
@@ -526,8 +574,13 @@
       <option name="PROGRAM_PARAMETERS" />
       <predefined_log_file id="idea.log" enabled="true" />
     </configuration>
+    <list>
+      <item itemvalue="Application.LanguageImpl" />
+      <item itemvalue="JUnit.LanguageTest.occurrences" />
+    </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.LanguageTest.occurrences" />
         <item itemvalue="Application.LanguageImpl" />
       </list>
     </recent_temporary>
@@ -545,6 +598,26 @@
     </task>
     <servers />
   </component>
+  <component name="TestHistory">
+    <history-entry file="LanguageTest_occurrences - 2018.04.18 at 20h 46m 55s.xml">
+      <configuration name="LanguageTest.occurrences" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="LanguageTest_occurrences - 2018.04.18 at 20h 48m 44s.xml">
+      <configuration name="LanguageTest.occurrences" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="LanguageTest_occurrences - 2018.04.18 at 20h 48m 59s.xml">
+      <configuration name="LanguageTest.occurrences" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="LanguageTest_occurrences - 2018.04.18 at 20h 49m 42s.xml">
+      <configuration name="LanguageTest.occurrences" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="LanguageTest_occurrences - 2018.04.18 at 20h 50m 32s.xml">
+      <configuration name="LanguageTest.occurrences" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="LanguageTest_occurrences - 2018.04.18 at 22h 06m 11s.xml">
+      <configuration name="LanguageTest.occurrences" configurationId="JUnit" />
+    </history-entry>
+  </component>
   <component name="ToolWindowManager">
     <frame x="-1" y="0" width="1922" height="1046" extended-state="6" />
     <editor active="true" />
@@ -555,7 +628,7 @@
       <window_info anchor="right" id="Palette&#9;" order="0" />
       <window_info id="Image Layers" order="6" />
       <window_info anchor="right" id="Capture Analysis" order="2" />
-      <window_info anchor="bottom" id="Event Log" order="0" sideWeight="0.50104165" side_tool="true" visible="true" weight="0.32943678" />
+      <window_info anchor="bottom" id="Event Log" order="0" sideWeight="0.50104165" side_tool="true" weight="0.32943678" />
       <window_info anchor="right" id="Maven Projects" order="1" />
       <window_info anchor="bottom" id="Version Control" order="2" />
       <window_info active="true" anchor="bottom" id="Run" order="6" sideWeight="0.49895832" visible="true" weight="0.32943678" />
@@ -578,6 +651,36 @@
       <window_info anchor="bottom" id="Build" order="1" visible="true" weight="0.32979852" />
       <window_info anchor="bottom" id="Message" order="4" />
     </layout>
+    <layout-to-restore>
+      <window_info anchor="right" id="Palette" order="5" />
+      <window_info anchor="bottom" id="Find" order="6" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="8" weight="0.25" />
+      <window_info anchor="right" id="Capture Analysis" order="2" />
+      <window_info anchor="right" id="Gradle" order="3" />
+      <window_info active="true" anchor="bottom" id="Run" order="7" sideWeight="0.49895832" visible="true" weight="0.32943678" />
+      <window_info anchor="right" id="Ant Build" order="7" weight="0.25" />
+      <window_info anchor="bottom" id="Cvs" order="9" weight="0.25" />
+      <window_info content_ui="combo" id="Project" order="4" visible="true" weight="0.25" />
+      <window_info id="Structure" order="5" side_tool="true" weight="0.25" />
+      <window_info anchor="right" id="Theme Preview" order="4" />
+      <window_info anchor="bottom" id="TODO" order="11" />
+      <window_info anchor="bottom" id="Message" order="5" />
+      <window_info id="Image Layers" order="6" />
+      <window_info id="Designer" order="1" />
+      <window_info id="UI Designer" order="2" />
+      <window_info anchor="bottom" id="Debug" order="8" weight="0.4" />
+      <window_info anchor="right" id="Palette&#9;" order="0" />
+      <window_info anchor="bottom" id="Terminal" order="4" />
+      <window_info anchor="bottom" id="Event Log" order="1" sideWeight="0.50104165" side_tool="true" visible="true" weight="0.32943678" />
+      <window_info anchor="bottom" id="Inspection" order="10" weight="0.4" />
+      <window_info anchor="bottom" id="Version Control" order="3" />
+      <window_info anchor="bottom" id="Build" order="2" visible="true" weight="0.32979852" />
+      <window_info id="Capture Tool" order="0" />
+      <window_info anchor="right" id="Commander" order="6" weight="0.4" />
+      <window_info anchor="bottom" id="Messages" order="0" sideWeight="0.49895832" weight="0.32943678" />
+      <window_info anchor="right" id="Maven Projects" order="1" />
+      <window_info id="Favorites" order="3" side_tool="true" />
+    </layout-to-restore>
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
@@ -600,7 +703,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/edu/gcccd/csis/Language.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="510">
+        <state relative-caret-position="770">
           <caret line="90" column="33" selection-start-line="90" selection-start-column="33" selection-end-line="90" selection-end-column="33" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -610,10 +713,20 @@
         </state>
       </provider>
     </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/junit/junit/4.12/a6c32b40bf3d76eca54e3c601e5d1470c86fcdfa/junit-4.12-sources.jar!/junit/framework/TestCase.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="201">
+          <caret line="408" selection-start-line="408" selection-end-line="408" />
+          <folding>
+            <element signature="e#12687#12688#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/edu/gcccd/csis/LanguageTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="23" selection-start-line="23" selection-end-line="23" />
+        <state relative-caret-position="493">
+          <caret line="74" column="5" lean-forward="true" selection-start-line="74" selection-start-column="5" selection-end-line="74" selection-end-column="5" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -622,11 +735,13 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/edu/gcccd/csis/LanguageImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="409">
-          <caret line="49" column="10" selection-start-line="49" selection-start-column="10" selection-end-line="49" selection-end-column="10" />
+        <state relative-caret-position="442">
+          <caret line="62" column="9" lean-forward="true" selection-start-line="62" selection-start-column="9" selection-end-line="62" selection-end-column="9" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#497#514#0" expanded="true" />
+            <element signature="e#760#761#0" expanded="true" />
+            <element signature="e#788#789#0" expanded="true" />
           </folding>
         </state>
       </provider>
