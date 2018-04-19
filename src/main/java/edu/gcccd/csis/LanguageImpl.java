@@ -2,6 +2,7 @@ package edu.gcccd.csis;
 
 import java.io.File;
 import java.io.FileNotFoundException;
+import java.io.FileWriter;
 import java.io.IOException;
 import java.nio.file.InvalidPathException;
 import java.nio.file.Path;
@@ -49,11 +50,11 @@ public class LanguageImpl implements Language{
     public void append(String sourcefile){
         try{
             Path path = Paths.get(sourcefile);
-            Formatter toFile = new Formatter(sourcefile);
+            FileWriter toFile = new FileWriter(sourcefile,true);
             for(String s: occurencesTracker.keySet()){
-                toFile.format("//" + s + " Occurences: "  + occurencesTracker.get(s) + "\n");
+                toFile.write("//" + s + " Occurences: "  + occurencesTracker.get(s) + "\n");
             }
-            toFile.format("//Total Occurences: " + totalCount);
+            toFile.write("//Total Occurences: " + totalCount);
             toFile.close();
         }
         catch(IOException IOException){
