@@ -191,10 +191,8 @@ public class LanguageTest {
         String tester = "";
         final LanguageImpl sa = new LanguageImpl();
         // Appends to a separate text file, puts it into a string then tests it against a defined test string
-        System.out.println(System.getProperty("user.dir"));
         final String SOURCEFILE = System.getProperty("user.dir") + File.separator + "src" + File.separator + "main" + File.separator + "java"
                 + File.separator + LanguageImpl.class.getName().replace(".", File.separator) + ".java";
-        System.out.println(SOURCEFILE);
         sa.occurrences(SOURCEFILE);
         sa.append(tmp.getAbsolutePath());
         BufferedReader charInput = new BufferedReader(new InputStreamReader(new FileInputStream(tmp)));
@@ -202,7 +200,6 @@ public class LanguageTest {
         while ((charByChar = charInput.read()) != -1){
             tester += (char)charByChar;
         }
-        System.out.println(tester);
         assertTrue(tester.equals(testString));
 
 
